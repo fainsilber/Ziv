@@ -1,0 +1,65 @@
+@model Ziv.Models.Shark
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Shark</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="ID" />
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountOfTeeth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AmountOfTeeth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NeedSaltWater)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NeedSaltWater)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SkinColor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SkinColor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>
