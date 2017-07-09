@@ -25,6 +25,16 @@ namespace Ziv.Models
                         HairColor = "Black",
                         Age = 15
                     });
+                aContext.Gorilla.Add(
+                    new Gorilla
+                    {
+                        DateOfBirth = DateTime.Parse("2001-01-01"),
+                        Gender = "Male",
+                        Name = "Caesar",
+                        Weight = 96,
+                        HairColor = "Black",
+                        Age = 16
+                    });
                 aContext.Parrot.Add(
                     new Parrot
                     {
@@ -34,6 +44,16 @@ namespace Ziv.Models
                         Weight = 1.5M,
                         CanTalk = true,
                         FeathersColor = "Blue"
+                    });
+                aContext.Parrot.Add(
+                    new Parrot
+                    {
+                        DateOfBirth = DateTime.Parse("2015-06-09"),
+                        Gender = "Male",
+                        Name = "Paulie",
+                        Weight = 2.1M,
+                        CanTalk = false,
+                        FeathersColor = "Green"
                     });
                 aContext.Shark.Add(
                     new Shark
